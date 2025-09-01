@@ -1,0 +1,30 @@
+[
+  {
+    "descricao": "Salário do mês de agosto",
+    "valor": "10417.14",
+    "data": "2024-08-22",
+    "categoria": "Salário",
+    "formaRecebimento": "Transferência"
+  },
+  {
+    "descricao": "Ganho de investimento mensal",
+    "valor": "1334.14",
+    "data": "2024-08-02",
+    "categoria": "Investimentos",
+    "formaRecebimento": "Outro"
+  },
+  {
+    "descricao": "Venda PC antigo",
+    "valor": "2415.50",
+    "data": "2024-08-03",
+    "categoria": "Vendas",
+    "formaRecebimento": "Dinheiro"
+  },
+  {
+    "descricao": "Salário do mês de outubro",
+    "valor": "13441.14",
+    "data": "2024-10-11",
+    "categoria": "Salário",
+    "formaRecebimento": "Pix"
+  }
+]

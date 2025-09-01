@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestão Financeira Pessoal - Início</title>
+    <link rel="stylesheet" href="public/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="public/css/style.css">
+</head>
+<body>
+    <header>
+        <h1 class="text-center">Gestão Financeira Pessoal</h1>
+    </header>
+
+    <div class="logout-container">
+        <button id="logoutButton" class="btn btn-danger btn-sm">Sair</button>
+    </div>
+
+    <nav>
+        <div class="container text-center">
+            <div class="row"> 
+                <div class="col elem-menu">
+                    <button class="btn"><a href="index.html">Início</a></button>
+                </div>
+                <div class="col elem-menu">
+                    <button class="btn"><a href="despesas.html">Despesas</a></button>
+                </div>
+                <div class="col elem-menu">
+                    <button class="btn"><a href="receitas.html">Receitas</a></button>
+                </div>
+                <div class="col elem-menu">
+                    <button class="btn"><a href="relatorios.html">Relatórios</a></button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container mt-4">
+            <div class="row text-center">
+                <div class="col-md-6 mb-4">
+                    <div class="card sombra-suave">
+                        <div class="card-body">
+                            <h2 class="card-title texto-receita">Total de Receitas</h2>
+                            <p class="card-text h3" id="totalReceitas">R$ 0,00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card sombra-suave">
+                        <div class="card-body">
+                            <h2 class="card-title texto-despesa">Total de Despesas</h2>
+                            <p class="card-text h3" id="totalDespesas">R$ 0,00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-12">
+                    <div class="card sombra-suave">
+                        <div class="card-body">
+                            <h2 class="card-title texto-saldo">Saldo Atual</h2>
+                            <p class="card-text h3" id="saldoAtual">R$ 0,00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="text-center">&copy;2024 Sistema de Gestão Financeira</footer>
+
+    <script src="public/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="public/js/index.js"></script>
+    <script src="public/js/logout.js"></script>
+</body>
+</html>

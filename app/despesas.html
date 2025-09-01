@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestão Financeira Pessoal - Despesas</title>
+    <link rel="stylesheet" href="public/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="public/css/despesas.css">
+</head>
+<body>
+    <header>
+        <h1 class="text-center">Gestão Financeira Pessoal</h1>
+    </header>
+
+    <div class="logout-container">
+        <button id="logoutButton" class="btn btn-danger btn-sm">Sair</button>
+    </div>
+
+    <nav>
+        <div class="container text-center">
+            <div class="row"> 
+                <div class="col elem-menu">
+                    <button class="btn"><a href="index.html">Início</a></button>
+                </div>
+                <div class="col elem-menu">
+                    <button class="btn"><a href="despesas.html">Despesas</a></button>
+                </div>
+                <div class="col elem-menu">
+                    <button class="btn"><a href="receitas.html">Receitas</a></button>
+                </div>
+                <div class="col elem-menu">
+                    <button class="btn"><a href="relatorios.html">Relatórios</a></button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container mt-4">
+            <h2 class="text-center mb-4" style="color: black;">Gerenciar Despesas</h2>
+            
+            <div class="row mb-4">
+                <div class="col-md-8 offset-md-2">
+                    <div class="card sombra-suave">
+                        <div class="card-body">
+                            <h3 class="card-title">Adicionar Despesa</h3>
+                            <form id="despesaForm">
+                                <div class="form-group espaco-entre-elem">
+                                    <label for="nomeDespesa">Nome da Despesa</label>
+                                    <input type="text" id="nomeDespesa" class="form-control" placeholder="Ex.: Supermercado" required>
+                                </div>
+                                <div class="form-group espaco-entre-elem">
+                                    <label for="valorDespesa">Valor</label>
+                                    <input type="number" id="valorDespesa" class="form-control" placeholder="Ex.: 150.00" step="0.01" required>
+                                </div>
+                                <div class="form-group espaco-entre-elem">
+                                    <label for="dataDespesa">Data</label>
+                                    <input type="date" id="dataDespesa" class="form-control" required>
+                                </div>
+                                <div class="form-group mb-3 espaco-entre-elem">
+                                    <label for="categoria" class="form-label">Categoria</label>
+                                    <select class="form-control" id="categoria" required>
+                                        <option value="">Selecione uma categoria</option>
+                                        <option value="Alimentação">Alimentação</option>
+                                        <option value="Transporte">Transporte</option>
+                                        <option value="Moradia">Moradia</option>
+                                        <option value="Educação">Educação</option>
+                                        <option value="Saúde">Saúde</option>
+                                        <option value="Outros">Outros</option>
+                                    </select>
+                                </div>
+                                <div class="form-group mb-3 espaco-entre-elem">
+                                    <label for="formaPagamento" class="form-label">Forma de Pagamento</label>
+                                    <select class="form-control" id="formaPagamento" required>
+                                        <option value="">Selecione uma forma de Pagamento</option>
+                                        <option value="Dinheiro">Dinheiro</option>
+                                        <option value="Cartão">Cartão</option>
+                                        <option value="Transferência">Transferência</option>
+                                        <option value="Transferência">Pix</option>
+                                        <option value="Outro">Outro</option>
+                                    </select>
+                                </div>
+                                <button type="submit" class="btn btn-primary" style="margin: 20px 0px;">Adicionar Despesa</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-8 offset-md-2">
+                    <div class="card sombra-suave">
+                        <div class="card-body">
+                            <h3 class="card-title">Lista de Despesas</h3>
+                            <div class="form-group mb-3">
+                                <label for="filtrarData">Filtrar por Data</label>
+                                <input type="date" id="filtrarData" class="form-control">
+                            </div>
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>Nome</th>
+                                        <th>Valor</th>
+                                        <th>Data</th>
+                                        <th>Categoria</th>
+                                        <th>Forma de Pagamento</th>
+                                        <th>Ações</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="listaDespesas">
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="text-center">&copy;2024 Sistema de Gestão Financeira</footer>
+
+    <script src="public/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="public/js/despesas.js"></script>
+    <script src="public/js/logout.js"></script>
+</body>
+</html>

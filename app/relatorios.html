@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestão Financeira Pessoal - Relatórios</title>
+    <link rel="stylesheet" href="public/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="public/css/relatorios.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <h1 class="text-center">Gestão Financeira Pessoal</h1>
+    </header>
+
+    <div class="logout-container">
+        <button id="logoutButton" class="btn btn-danger btn-sm">Sair</button>
+    </div>
+
+    <nav>
+        <div class="container text-center">
+            <div class="row"> 
+                <div class="col elem-menu">
+                    <button class="btn"><a href="index.html">Início</a></button>
+                </div>
+                <div class="col elem-menu">
+                    <button class="btn"><a href="despesas.html">Despesas</a></button>
+                </div>
+                <div class="col elem-menu">
+                    <button class="btn"><a href="receitas.html">Receitas</a></button>
+                </div>
+                <div class="col elem-menu">
+                    <button class="btn"><a href="relatorios.html">Relatórios</a></button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container mt-4">
+            <h2 class="text-center texto-relatorio">Relatórios de Despesas e Receitas</h2>
+
+            <div class="row mt-4">
+                <div class="col-md-6">
+                    <div class="card sombra-suave">
+                        <div class="card-body">
+                            <h3 class="card-title texto-despesa">Distribuição das Despesas</h3>
+                            <canvas id="graficoDespesas"></canvas>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card sombra-suave">
+                        <div class="card-body">
+                            <h3 class="card-title texto-receita">Distribuição das Receitas</h3>
+                            <canvas id="graficoReceitas"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-4 centrarlizar-grafico">
+                <div class="col-9">
+                    <div class="card sombra-suave">
+                        <div class="card-body">
+                            <h3 class="card-title texto-saldo" >Saldo Mensal</h3>
+                            <canvas id="graficoSaldoMensal"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </main>
+
+    <footer class="text-center">&copy;2024 Sistema de Gestão Financeira</footer>
+
+    <script src="public/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="public/js/relatorios.js"></script>
+    <script src="public/js/logout.js"></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestão Financeira Pessoal - Login</title>
+    <link rel="stylesheet" href="public/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="public/css/login.css">
+</head>
+<body>
+    <div class="container d-flex justify-content-center align-items-center" style="height: 100vh;">
+        <div class="card shadow-sm" style="width: 400px;">
+            <div class="card-body">
+                <h2 class="card-title text-center">Gestão Financeira Pessoal</h2>
+                <form id="loginForm">
+                    <div class="form-group mb-3">
+                        <label for="usuario">Usuário</label>
+                        <input type="text" id="usuario" class="form-control" placeholder="Seu usuário" required>
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for="senha">Senha</label>
+                        <input type="password" id="senha" class="form-control" placeholder="Sua senha" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Entrar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="public/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="public/js/login.js"></script>
+</body>
+</html>

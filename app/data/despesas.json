@@ -1,0 +1,44 @@
+[
+  {
+    "nome": "Compra mensal",
+    "valor": "2000.00",
+    "data": "2024-08-30",
+    "categoria": "Outros",
+    "formaPagamento": "Dinheiro"
+  },
+  {
+    "nome": "PC novo",
+    "valor": "3546.31",
+    "data": "2024-08-17",
+    "categoria": "Outros",
+    "formaPagamento": "Transferência"
+  },
+  {
+    "nome": "Alimentação diária",
+    "valor": "500.98",
+    "data": "2024-08-27",
+    "categoria": "Alimentação",
+    "formaPagamento": "Transferência"
+  },
+  {
+    "nome": "Plano de saúde",
+    "valor": "4000.00",
+    "data": "2024-09-05",
+    "categoria": "Saúde",
+    "formaPagamento": "Cartão"
+  },
+  {
+    "nome": "Aluguel",
+    "valor": "1200.00",
+    "data": "2024-08-29",
+    "categoria": "Moradia",
+    "formaPagamento": "Transferência"
+  },
+  {
+    "nome": "Presentes de natal",
+    "valor": "2500.00",
+    "data": "2024-12-20",
+    "categoria": "Outros",
+    "formaPagamento": "Cartão"
+  }
+]
